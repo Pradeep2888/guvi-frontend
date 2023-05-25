@@ -28,7 +28,7 @@ function LoginBox() {
         navigate(`/profile`)
       }
       else if("Please register First"){
-        navigate("/register")
+        navigate("/")
       }
     })
     .catch((e)=>{

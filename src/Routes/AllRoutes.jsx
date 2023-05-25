@@ -9,9 +9,9 @@ function AllRoutes() {
   return (
     <div>
        <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/home' element={<Home/>} />
         <Route path='/profile' element={<Profile/>} />
-        <Route path='/register' element={<Register/>} />
+        <Route path='/' element={<Register/>} />
         <Route path='/login' element={<Login/>} />
        </Routes>
     </div>

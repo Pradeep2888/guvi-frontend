@@ -21,7 +21,7 @@ useEffect(()=>{
 
  const handleClick=()=>{
     localStorage.setItem("token",JSON.stringify(""))
-    navigate("login")
+    navigate("/login")
  }
   return (
     <div className='profilecard' >

@@ -14,7 +14,6 @@ function ProfileBox() {
   
     const handleSubmit=(e)=>{
       e.preventDefault()
-      console.log("hi")
       profileupdate(state)
     }
 
@@ -24,7 +23,7 @@ function ProfileBox() {
        .then((r)=>{
         alert(r.data.msg)
         if(r.data.msg==="update successfully"){
-          navigate("/")
+          navigate("/home")
         }
        })
        .catch((e)=>{
