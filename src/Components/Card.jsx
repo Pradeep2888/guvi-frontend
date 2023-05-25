@@ -7,7 +7,7 @@ function Card() {
      const navigate=useNavigate()
     const getData=()=>{
         const token=JSON.parse(localStorage.getItem("token")) || ""
-        axios.get(`https://guvi-backend-xk1j.onrender.com/profile/user/${token}`)
+        axios.get(`https://guvi-backend-l0eg.onrender.com/profile/user/${token}`)
         .then((r)=>{
             setData(r.data.data)
         })

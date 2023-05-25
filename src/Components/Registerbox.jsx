@@ -23,7 +23,7 @@ function Registerbox() {
   }
 
   const register=(state)=>{
-   axios.post("https://guvi-backend-xk1j.onrender.com/register/add-user",state)
+   axios.post("https://guvi-backend-l0eg.onrender.com/register/add-user",state)
    .then((r)=>{
      alert(r.data.msg)
      if(r.data.msg==="User already exists" || r.data.msg==="User Register Successfull" ){

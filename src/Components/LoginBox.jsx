@@ -20,7 +20,7 @@ function LoginBox() {
 
   const login=(state)=>{
     let token=JSON.parse(localStorage.getItem("token")) || ""
-    axios.post("https://guvi-backend-xk1j.onrender.com/login/user",state)
+    axios.post("https://guvi-backend-l0eg.onrender.com/login/user",state)
     .then((r)=>{
       alert(r.data.msg)
       if(r.data.msg==="Login sucessfull"){

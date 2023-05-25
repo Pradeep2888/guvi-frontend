@@ -20,7 +20,7 @@ function ProfileBox() {
 
     const profileupdate=(state)=>{
       const token=JSON.parse(localStorage.getItem("token")) || ""
-       axios.post(`https://guvi-backend-xk1j.onrender.com/profile/update/${token}`,state)
+       axios.post(`https://guvi-backend-l0eg.onrender.com/profile/update/${token}`,state)
        .then((r)=>{
         alert(r.data.msg)
         if(r.data.msg==="update successfully"){
